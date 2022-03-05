@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Pricing example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script>
+	function whatsappnumero(codProduto){
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const vendedor = urlParams.get('vendedor')
+	const filtro = urlParams.get('filtro')
+	var numerowhatsapp = ''
+	if(vendedor == 'Silvio'){
+	numerowhatsapp = '5519987338005'
+	}
+	if(vendedor == 'Junior'){
+	numerowhatsapp = '5519989290022'
+	}
+	if(vendedor == 'Camila'){
+	numerowhatsapp = '551991313012'
+	}
+	var textoInicial = "Olá,%20tenho%20interesse%20no%20perfume%20"
+	var texto = 'https://api.whatsapp.com/send/?phone=' + numerowhatsapp + '&text=' + textoInicial + codProduto
+	location.href = texto;
+	return texto
+	}
+	
+	function familiaAmadeirado(){
+	const collectionCitrico = document.getElementsByClassName("Citrico");
+	for (let i = 0; i < collectionCitrico.length; i++) {
+	collectionCitrico[i].style.display = "none";
+	}
+	
+	let collectionAmadeirado = document.getElementsByClassName("Amadeirado");
+	for (let i = 0; i < collectionAmadeirado.length; i++) {
+	collectionAmadeirado[i].style.display = "block";
+	}
+	}
+	
+	function familiaCitrico(){
+	let collectionAmadeirado = document.getElementsByClassName("Amadeirado");
+	for (let i = 0; i < collectionAmadeirado.length; i++) {
+	collectionAmadeirado[i].style.display = "none";
+	}
+	const collectionCitrico = document.getElementsByClassName("Citrico");
+	for (let i = 0; i < collectionCitrico.length; i++) {
+	collectionCitrico[i].style.display = "block";
+	}
+	}
+	</script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+   @media (max-width: 768px) {
+	.desktop{
+	display:none;}
+}
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem!important;
+        }
+		.mobileperfumes{
+			display:none!important;
+		}
+      }
+	  body{
+	  background-image: none!important;
+	  background-color: var(--bs-gray-800)!important;
+	  }
+	  .accordion {
+	  background-color: #eee!important;
+	  color: #444!important;
+	  cursor: pointer!important;
+	  padding: 18px!important;
+	  width: 100%!important;
+	  border: none!important;
+	  text-align: left!important;
+	  outline: none!important;
+	  font-size: 15px!important;
+	  transition: 0.4s!important;
+	  }
+
+	.active, .accordion:hover {
+		background-color: #ccc!important; 
+	}
+
+	.panel {
+	  padding: 0 18px!important;
+	  overflow: hidden!important;
+	}
+	
+	.corletra{
+	color:white;
+	}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="container py-3">
+  <header>
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal corletra">Catalogo de Produtos</h1>
+	  <button class="accordion mobileperfumes corletra">Saiba mais sobre a Top Perfums</button>
+	<div class="mobileperfumes panel">
+	  <p class="mobileperfumes corletra">Você sabia que seu perfume pode te deixar inesquecível na vida de uma pessoa???
+
+Quem nunca pensou em comprar aquele perfume importado, mas, por conta do preço absurdo, acabou optando por aquele mais barato???
+
+Agora, já imaginou usar um perfume da mesma qualidade de um importado e com um preço inacreditável???
+
+Pensando nisso, nós da Top Perfums decidimos compartilhar com vocês a nossa criação de contratipos, baseados nos mais renomados perfumes do mundo.
+
+Criação esta, que ja vem de alguns anos... surpreendendo todos os que usam e que sentem os maravilhosos perfumes...
+
+Totalmente artesanais, colocando em cada gota o prazer e a sofisticação de um produto feito por pessoas, que assim como você, exige a qualidade daquilo que se adquiri.
+
+Desde 2018 criando, surpreendendo e encantando a todos que usam Top Perfums.</p>
+	</div>
+	<p class="corletra desktop">Saiba mais sobre a Top Perfums</p>
+	<p class="corletra desktop">Você sabia que seu perfume pode te deixar inesquecível na vida de uma pessoa???
+
+Quem nunca pensou em comprar aquele perfume importado, mas, por conta do preço absurdo, acabou optando por aquele mais barato???
+
+Agora, já imaginou usar um perfume da mesma qualidade de um importado e com um preço inacreditável???
+
+Pensando nisso, nós da Top Perfums decidimos compartilhar com vocês a nossa criação de contratipos, baseados nos mais renomados perfumes do mundo.
+
+Criação esta, que ja vem de alguns anos... surpreendendo todos os que usam e que sentem os maravilhosos perfumes...
+
+Totalmente artesanais, colocando em cada gota o prazer e a sofisticação de um produto feito por pessoas, que assim como você, exige a qualidade daquilo que se adquiri.
+
+Desde 2018 criando, surpreendendo e encantando a todos que usam Top Perfums.</p>
+	
+	
+    </div>
+  </header>
+
+  <main>
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#Masculino">Masculino</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Feminino">Feminino</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Unissex">Unissex</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="javascript:familiaAmadeirado()">Amadeirado</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="javascript:familiaCitrico()">Citrico</a>
+  </li>
+</ul>
+<br/>
+    <div id="Masculino" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (5).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1 </h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (5).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal2</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (5).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  </div>
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="#Masculino">Masculino</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#Feminino">Feminino</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Unissex">Unissex</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="javascript:familiaAmadeirado()">Amadeirado</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="javascript:familiaCitrico()">Citrico</a>
+  </li>
+</ul>
+<br/>
+	  <div id="Feminino" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+	  <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  	  <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div id="Amadeirado"  class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scandal1</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (3).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+            <a href="javascript:whatsappnumero()">Comprar</a>
+          </div>
+        </div>
+      </div>
+	  </div>
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="#Masculino">Masculino</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Feminino">Feminino</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#Unissex">Unissex</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="javascript:familiaAmadeirado()">Amadeirado</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="javascript:familiaCitrico()">Citrico</a>
+  </li>
+</ul>
+<br/>
+      <div id="Unissex" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scanda2</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (4).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+			<a href="javascript:whatsappnumero()">Comprar</a>
+            </div>
+        </div>
+      </div>
+	  <div  class="col Citrico">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Scanda2</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (4).jpeg">
+              <li>Compre um perfume Citrico</li>
+            </ul>
+			<a href="javascript:whatsappnumero()">Comprar</a>
+            </div>
+        </div>
+      </div>
+	  <div  class="col Amadeirado">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">212</h4>
+          </div>
+          <div  class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+			  <img style="width: 60%;" src="C:\Users\alberto.mariano\Desktop\perfumes\WhatsApp Image 2022-01-03 at 15.59.22 (4).jpeg">
+              <li>Compre um perfume Amadeirado</li>
+            </ul>
+			<a href="javascript:whatsappnumero('212')">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+  </body>
+  	<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+	
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.display == "block") {
+		  panel.style.display = "none";
+		} else {
+		  panel.style.display = "block";
+		}
+	  });
+	  
+	}
+	
+</script>
+</html>
